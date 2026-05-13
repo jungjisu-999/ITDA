@@ -1,0 +1,16 @@
+# 1. 가상환경 및 캐시
+venv/
+__pycache__/
+
+# 2. 데이터 (용량이 크고 보안이 필요할 수 있음)
+data/
+raw_data/
+*.npz
+*.npy
+*.pt
+*.csv
+
+# 3. 모델 가중치 및 결과물
+models/
+results/
+*.pth

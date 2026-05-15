@@ -85,12 +85,12 @@ if __name__ == "__main__":
     ]
 
     all_seed_results = []
-    print("🚀 [CARE-GNN] 5개 시드 릴레이 수사를 시작합니다.")
+    print(" [CARE-GNN] 5개 시드 릴레이 수사를 시작합니다.")
     
     for f in data_files:
         # 파일이 있는지 확인
         if not os.path.exists(f):
-            print(f"❌ 파일 없음: {f}")
+            print(f" 파일 없음: {f}")
             continue
             
         seed_num = int(f.split('_')[-1].split('.')[0])
@@ -102,7 +102,7 @@ if __name__ == "__main__":
         print(f" -> 완료! (F1: {res['F1']:.4f})")
 
     if all_seed_results:
-        print("\n📊 === [최종 수사 보고서 요약] ===")
+        print("\n === [최종 수사 보고서 요약] ===")
         for metric in all_seed_results[0].keys():
             values = [r[metric] for r in all_seed_results]
             print(f"{metric:10} : 평균 {np.mean(values):.4f} (±{np.std(values):.4f})")

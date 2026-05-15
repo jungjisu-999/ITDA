@@ -39,10 +39,10 @@ try:
         os.makedirs('data', exist_ok=True)
         df.to_csv('data/cleaned_meta.csv', index=False)
         np.save('data/refined_embeddings.npy', refined_embeddings)
-        print("💾 정제된 데이터가 'data/' 폴더에 저장되었습니다.")
+        print(" 정제된 데이터가 'data/' 폴더에 저장되었습니다.")
     else:
-        print("\n❌ 여전히 개수가 맞지 않습니다. 구조적 확인이 필요합니다.")
+        print("\n 여전히 개수가 맞지 않습니다. 구조적 확인이 필요합니다.")
 
 except Exception as e:
-    print(f"\n❌ 작업 중 에러 발생: {e}")
+    print(f"\n 작업 중 에러 발생: {e}")
 

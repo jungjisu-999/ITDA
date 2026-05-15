@@ -35,13 +35,13 @@ def merge_all_features():
     np.save('data/prod_ids.npy', prod_ids)
     
     print("\n✨✨ [작업 완료] ✨✨")
-    print("💾 final_x.npy (입력 피처)")
-    print("💾 final_y.npy (정답 라벨)")
-    print("💾 user_ids.npy / prod_ids.npy (그래프 연결용 ID)")
+    print(" final_x.npy (입력 피처)")
+    print(" final_y.npy (정답 라벨)")
+    print(" user_ids.npy / prod_ids.npy (그래프 연결용 ID)")
     print("이제 CARE-GNN 모델에 이 데이터들을 때려 넣기만 하면 됩니다!")
 
 if __name__ == "__main__":
     if os.path.exists('data/cleaned_meta.csv'):
         merge_all_features()
     else:
-        print("❌ 'data/cleaned_meta.csv'가 없습니다. 먼저 check_data.py를 실행하세요.")
+        print(" 'data/cleaned_meta.csv'가 없습니다. 먼저 check_data.py를 실행하세요.")

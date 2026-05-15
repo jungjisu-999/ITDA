@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 import os
 
 def split_with_ratio(train_ratio=0.7, val_ratio=0.1, test_ratio=0.2):
-    print(f"✂️ 분할 비율 {train_ratio}:{val_ratio}:{test_ratio}로 작업을 시작합니다.")
+    print(f" 분할 비율 {train_ratio}:{val_ratio}:{test_ratio}로 작업을 시작합니다.")
     
     # 1. 라벨 데이터 로드
     y = np.load('data/final_y.npy')

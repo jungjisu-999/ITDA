@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import os
 
 def build_custom_graph():
-    print("🚀 메모리 최적화 모드로 커스텀 릴레이션 생성을 시작합니다.")
+    print(" 메모리 최적화 모드로 커스텀 릴레이션 생성을 시작합니다.")
 
     # 1. 데이터 로드
     df = pd.read_csv('data/cleaned_meta.csv')
